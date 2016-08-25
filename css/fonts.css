@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Ubuntu Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
+    url(../fonts/ubuntu-bold_c8701ad59caed80160b3123c1a8090a7.woff) format('woff'),
+    url(../fonts/ubuntu-bold_c8701ad59caed80160b3123c1a8090a7.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico'), local('Pacifico-Regular'),
+    url(../fonts/pacifico_821a407c1f94c7d0adb6b8753ce707bd.woff) format('woff'),
+    url(../fonts/pacifico_821a407c1f94c7d0adb6b8753ce707bd.ttf) format('truetype');
+}
