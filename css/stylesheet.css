@@ -24,17 +24,19 @@ body {
 
 /*хедер*/
 header {
-    height: 135px;
+    height: 137px;
     background: url("../img/Background-header.png");
 }
-
+header{
+    _background: url("../img/Background-header.png");
+}
 header .wrapper {
     height: 100%;
 }
 
 .logo {
     float: left;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .wrapper {
@@ -45,10 +47,7 @@ header .wrapper {
 }
 
 .transparency {
-    /*height: 500px;*/
-    background: url("../img/Present-Background2.jpg") no-repeat -600px;
-    /*-webkit-filter: blur(5px);*/
-    /*filter: blur(5px);*/
+    background: url("../img/Present-Background3.jpg");
 }
 
 .header-menu {
@@ -66,18 +65,21 @@ header .wrapper {
     color: #fff;
     border-radius: 0 0 5px 5px;
     text-transform: uppercase;
+    font-family: 'Signika', sans-serif;
 }
 
 .header-nav {
-    margin-top: 35px;
+    margin: 33px 10px 0 0;
 }
 
 .header-nav li {
-    margin-left: 50px;
+    /*margin-left: 54px;*/
     float: left;
     display: block;
 }
-
+.header-nav .create {
+    margin: 0 42px 0 66px;
+}
 #nav-toggle {
     display: none;
     width: 28px;
@@ -112,28 +114,36 @@ header .wrapper {
 
 .butt {
     background: rgb(27, 117, 186);
-    padding: 5px 15px;
+    padding: 7px 12px 3px;
     display: inline-block;
     cursor: pointer;
 }
 
 .button-one {
     border-radius: 0 0 0 5px;
-    margin-right: -5px;
+    margin-right: -4px;
 }
 
 .button-two {
-    border-left: 2px solid rgba(255, 255, 255, .2);
+    border-left: 1px solid rgba(255, 255, 255, .2);
     border-radius: 0 0 5px 0px;
 }
 
-a {
+a{
+    font-family: "Signika", sans-serif;
     text-decoration: none;
     font-size: 18px;
     color: rgb(27, 117, 186);
     text-transform: uppercase;
-    /*margin-left: 50px;*/
 }
+.header-nav a:hover{
+     text-decoration: none;
+ }
+.header-nav a:focus{
+    text-decoration: none;
+    color: rgb(27, 117, 186);
+}
+
 
 /*контент*/
 
@@ -141,69 +151,80 @@ a {
     background: url("../img/main-bg.jpg") repeat;
     float: left;
     border-radius: 3px;
-    margin: 40px 0 210px;
-    padding: 30px;
-    width: 61%;
+    margin: 40px 0 202px;
+    padding: 30px 33px 29px 30px;
+    width: 59.4%;
 }
 
 .my-presents {
     float: right;
     background: url("../img/logo-f.png") no-repeat 50% 88%,
-    url("../img/Background-wishlist.png");
-
+    url("../img/Background-wishlist.png") repeat-y;
     border-radius: 5px;
     text-align: center;
-    margin-top: 40px;
-    width: 36%;
+    margin-top: 41px;
+    width: 37.1%;
+    /*padding-right: 10px;*/
 }
 
 /*перший блок*/
 .caption {
+    font-family: "Signika", sans-serif;
     font-size: 50px;
     color: rgb(217, 54, 85);
     line-height: 1.2;
     /*margin: 5px 45px;*/
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
 }
 
 .chose-presents .btn-lg {
-    padding: 5px 10px;
+    padding: 2px 10px 4px 2px;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     background: rgb(217, 54, 85);
     border: none;
-    margin-left: 5px;
+    margin-left: 4px;
+    line-height: 1;
 }
 
 .glyphicon {
-    margin-left: -5px;
+    /*margin-left: -5px;*/
+    font-size: 14px;
+    margin-right: 3px;
 }
-
+.button-back .back{
+    font-size: 16px;
+    font-family: "Signika", sans-serif;
+}
 .chose-presents .line {
     height: 1px;
     background: rgba(0, 0, 0, .1);
-    margin: 20px 0;
+    margin: 13px 0;
 }
 
 .chose-presents .line-two {
-    margin: 5px 0 10px 0;
+    margin: 9px 0 10px 0;
+}
+.line-three{
+    height: 2px;
+    margin-top: 10px;
+    width: 100%;
 }
 
 .chose-presents .step {
     font-size: 20px;
     font-family: "Signika", sans-serif;
     color: rgb(159, 158, 158);
-    line-height: 1.2;
-    margin-left: 23%;
+    margin-left: 25%;
 }
 
-.chose-presents .description {
-    font-size: 17px;
+.chose-presents .description span{
+    font-size: 16px;
     font-family: "Ubuntu", sans-serif;
     color: rgb(143, 143, 143);
     line-height: 1.2;
-    text-align: justify;
+    text-align: left;
 }
 
 .search {
@@ -211,21 +232,23 @@ a {
 }
 
 .search input {
-    padding: 10px 15px;
+    font-family: "Ubuntu", sans-serif;
+    padding: 8px 0 6px 10px;
     font-size: 22px;
     color: rgb(132, 132, 132);
-    line-height: 1.2;
+    /*line-height: 1.2;*/
     border-color: rgba(0, 0, 0, .1);
     border-radius: 5px;
     margin: 20px 0;
     width: 100%;
+    background: url("../img/search2.png") repeat;
 
 }
 
 .search .fa-search {
     position: absolute;
-    top: 30px;
-    right: 20px;
+    top: 33px;
+    right: 16px;
     font-size: 26px;
     color: rgb(132, 132, 132);
 }
@@ -234,22 +257,23 @@ a {
 
 .chose-presents .presents {
     overflow-y: scroll;
-    height: 635px;
+    height: 651px;
     width: 104%;
     /*margin-right: -20px;*/
 
 }
 
 .presents p {
+    font-family: "Signika", sans-serif;
     font-size: 14px;
     color: rgb(27, 117, 186);
-    text-align: left;
-    margin: 5px 0 0 5px;
+    margin: 9px 0 0 2px;
+    line-height: 1.2;
 }
 
 .block-p {
     float: left;
-    margin: 1% 1.2%;
+    margin: 0 3.1% 3.2% 0;
     width: 30%;
     cursor: pointer;
     position: relative;
@@ -258,7 +282,7 @@ a {
 
 .presents img {
     width: 100%;
-    height: 150px;
+    height: 152px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -268,19 +292,22 @@ a {
 
 .block-p .price {
     color: rgb(217, 54, 85);
-    margin-top: 0;
+    margin-top: 2px;
 }
 
 .chose-presents .description-last .des-p {
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(143, 143, 143);
+    line-height: 1.2;
     text-align: center;
     font-size: 14px;
-    margin: 15px 0 0 0;
+    margin: 19px 0 0 0;
 }
 
 /*другий блок*/
 .block2-header {
     position: relative;
-    background: url("../img/base.png") repeat-x;
+    background: url("../img/base.png") repeat;
     border-radius: 3px 3px 0 0;
     padding: 15px 40px;
     border: 1px solid rgba(0, 0, 0, 0.7);
@@ -320,46 +347,82 @@ a {
 
 .clip {
     position: absolute;
-    top: 30px;
+    top: 31px;
     left: -8px;
 }
 
 .clip-two {
     position: absolute;
-    top: 15px;
-    left: -18px;
+    top: 25.5%;
+    left: -4.9%;
+    z-index: 99;
+}
+/***********************************/
+/******* Read More****/
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
 }
 
-.user-descrip-active, .user-descrip-hide {
-    font-size: 18px;
-    font-family: "Pacifico", sans-serif;
-    color: rgb(70, 69, 69);
-    text-align: left;
-}
+/************************************/
 
-.user-descrip-active {
-    /*margin-bottom: 5px;*/
-    margin-top: 10px;
-}
-
-.user-descrip-active p {
-    margin-bottom: 0;
-}
-
-.user-descrip-hide {
+.read-more-state {
     display: none;
 }
 
-#hider {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+    content: 'Read More';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Read Less';
+    text-decoration: underline;
+}
+.read-more-trigger {
+    display: inline-block;
+    font-size: .9em;
+    line-height: 2;
+}
+
+/*****************************/
+.user-descrip {
+    font-size: 18px;
+    font-family: "Pacifico", sans-serif;
+    color: rgb(70, 69, 69);
+    text-align: justify;
+    float: right;
+    width: 59%;
+    /*width: 62%;*/
+
+    vertical-align: middle;
+    margin: 10px 21px 0 0;
+    /*margin: 10px 16px 0 0;*/
+
+}
+@-moz-document url-prefix() {
+    .user-descrip {
+        width: 62%;
+        margin: 10px 16px 0 0;
+    }
 }
 
 .user-profile {
-    padding: 20px 5px 10px 5px;
+    padding: 24px 0px 8px 3px;
     border-bottom: 1px solid rgba(217, 54, 85, 0.3);
-
 }
 
 .user-profile .link {
@@ -367,19 +430,13 @@ a {
     font-family: "Ubuntu", sans-serif;
     color: rgb(163, 172, 179);
     text-decoration: underline;
-    margin: 5px 140px 5px 0;
     cursor: pointer;
     font-weight: normal;
+    margin: 5px 0 0 1px;
 }
 
 .user-profile .link:hover {
     color: rgb(183, 192, 179);
-}
-
-#hider:checked + .user-descrip-hide {
-    display: block;
-    text-align: justify;
-    margin: 0 20px 0 15px;
 }
 
 /*контент блок2*/
@@ -387,7 +444,10 @@ a {
     /*width: 100px;*/
     float: left;
     margin-right: 10px;
-    position: relative;
+    /*position: relative;*/
+}
+.pres-desc{
+    line-height: 1.5;
 }
 
 .content-wishlist {
@@ -395,13 +455,13 @@ a {
     border-top: 1px solid rgba(217, 54, 85, 0.3);
     /*background: url("../img/Vector-Smart-Object.png") no-repeat 50% 100%;*/
     border-bottom: 1px solid rgba(217, 54, 85, 0.3);
-    height: 590px;
-    /*overflow-y: scroll;*/
+    height: 627px;
+    padding-right: 10px;
 }
-
 .present-list {
-    height: 490px;
-    padding: 10px 10px 60px;
+    height: 550px;
+    padding: 0 13px 60px 10px;
+
 
 }
 
@@ -414,14 +474,14 @@ a {
     padding: 10px 5px;
     position: relative;
     cursor: pointer;
-    margin: 10px 0;
+    margin: 3px 0 10px 0;
 }
 
 .img-tr {
     width: 80px;
     height: 80px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /*border: 1px solid rgba(0, 0, 0, 0.1);*/
 }
 
 .cap1 {
@@ -452,8 +512,8 @@ a {
     border-radius: 0 0 3px 3px;
     background: url("../img/base-f.png");
     border: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 20px 0;
-    margin-top: 25px;
+    padding: 22px 0;
+    margin-top: 23px;
 }
 
 .block2-footer {
@@ -461,14 +521,13 @@ a {
 }
 
 .save-share span {
-    /*padding: 10px 69px;*/
     font-family: "Ubuntu", sans-serif;
     color: rgb(255, 255, 255);
     font-size: 30px;
     font-weight: bold;
     border: 1px ridge rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    padding: 3% 19%;
+    padding: 3% 22%;
     cursor: pointer;
 }
 
@@ -487,7 +546,7 @@ footer {
 }
 
 .img-face {
-    margin-right: 15px;
+    margin-right: 16px;
 }
 
 .imgfoo {
@@ -495,18 +554,19 @@ footer {
 }
 
 .footer-menu a {
-    margin-left: 45px;
+    margin-left: 12px;
 }
 
 .footer-menu {
-    margin-top: 50px;
+    margin-top: 45px;
 }
 
 footer .description-last {
-    font-size: 14px;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Signika", sans-serif;
+    font-size: 15px;
     color: rgb(143, 143, 143);
-    margin: 25px 0 40px 0;
+    margin: 15px 0 25px 0;
+    font-weight: normal;
 }
 
 /******************************************************************************/
@@ -521,30 +581,30 @@ footer .description-last {
 
 .selected {
     content: '';
-    /*display: none;*/
+    width: 100%;
+    height: 100%;
+    /* display: none; */
     position: absolute;
     opacity: 0.9;
-    top: 0;
-    left: 0;
+    top: 3px;
+    left: 3px;
     right: 0;
     bottom: 0;
     background: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    color: rgb(27, 117, 186);
     text-align: center;
-    padding: 50% 5%;
+    padding: 52% 0;
+    color: rgb(27, 117, 186);
 }
 
 .fa-check-square-o {
     font-size: 28px;
-
+    margin-bottom: 15px;
 }
-
 .selected .click {
-    /*font-size: 16px;*/
+    font-size: 16px;
     font-family: "Signika", sans-serif;
-    text-align: center;
-    font-weight: bold;
+    /*text-align: center;*/
     margin: 0;
 }
 
@@ -554,7 +614,7 @@ footer .description-last {
     display: none;
     opacity: 0.9;
     position: absolute;
-    top: 0;
+    top: 4px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -562,31 +622,26 @@ footer .description-last {
     color: rgb(217, 54, 85);
     z-index: 1;
     border-radius: 3px;
-    padding: 8% 3% 8% 10%;
-    font-size: 15px;
-    font-family: "Ubuntu Bold", sans-serif;
-
+    padding: 7% 2.5% 8% 10%;
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    width: 99%;
+    height: 90%;
 }
 
-/*.remove:hover{*/
-/*display: block;*/
-/*}*/
-
 .btn2 {
-    /*padding: 10px;*/
     background: #ffffff;
-    /*margin: 10px 20px;*/
     border-radius: 3px;
     border: 1px solid rgb(217, 54, 85);
 }
 
 .view-item {
     float: left;
-    padding: 10px;
+    padding: 9px 12px;
 }
 
 .view-item i {
-    margin-right: 10px;
+    margin-right: 9px;
     vertical-align: bottom;
 }
 
@@ -596,11 +651,11 @@ footer .description-last {
 
 .fa-caret-down {
     vertical-align: bottom;
-    margin-left: 15px;
+    margin-left: 11px;
 }
 
 .more-options div {
-    padding: 10px;
+    padding: 9px 10px;
 }
 
 .material-icons {
@@ -618,7 +673,7 @@ footer .description-last {
 .remove ul > li {
     border-top: 1px solid rgb(217, 54, 85);
     list-style-type: none;
-    padding: 10px 5px;
+    padding: 8px 4px;
     text-align: left;
 }
 
@@ -637,11 +692,17 @@ footer .description-last {
 }
 
 #ascrail2000 {
-    z-index: 2!important;
+    z-index: 2 !important;
 }
 
 @media screen and (max-width: 980px) {
 
+    @-moz-document url-prefix() {
+        .user-descrip {
+            width: 63%;
+            margin: 10px 9px 0 0;
+        }
+    }
     .chose-presents,
     .my-presents {
         float: none;
@@ -663,6 +724,7 @@ footer .description-last {
     .logo {
         margin-left: 20px;
     }
+
     .header-nav {
         display: none;
         z-index: 1;
@@ -691,18 +753,24 @@ footer .description-last {
         transition: 1s;
 
     }
-    .header-nav li a:hover{
+
+    .header-nav li a:hover {
         background: rgb(27, 117, 186);
         color: #ffffff;
+    }
+    .header-nav .create{
+        margin: 0;
     }
 
     #nav-toggle {
         display: block;
     }
+
     .header-menu {
         float: none;
     }
-    .footer-menu a{
+
+    .footer-menu a {
         font-size: 16px;
         margin-left: 15px;
     }
@@ -742,61 +810,78 @@ footer .description-last {
         float: left;
     }
 
-    .logo img{
+    .logo img {
         width: 240px;
     }
+
     .logo {
         margin-top: 40px;
     }
 }
+
 @media screen and (max-width: 570px) {
     .block-p {
         width: 70%;
     }
+
     .logo {
         width: 10%;
     }
+
     .chose-presents {
         width: 90%;
     }
-    .chose-presents .step{
+
+    .chose-presents .step {
         margin-left: 15%;
     }
+
     .search input {
         padding: 10px 15px;
         font-size: 16px;
     }
-    .fa-search{
+
+    .fa-search {
         font-size: 20px !important;
     }
 
 }
-@media screen and (max-width: 360px) {
-    .chose-presents{
+
+@media screen and (max-width: 362px) {
+    .chose-presents {
         width: 95%;
     }
-    .my-presents{
+
+    .my-presents {
         min-width: 300px;
     }
+
     .save-share span {
-         padding: 5%;
+        padding: 5%;
     }
+
     .btn2 {
         width: 49%;
     }
-    .remove{
+
+    .remove {
         font-size: 10px;
     }
-    .pres-desc p{
+
+    .pres-desc p {
         font-size: 18px;
     }
-
+    .user-descrip {
+        width: 50%;
+    }
 }
+
 @media screen and (max-width: 320px) {
 
-    .chose-presents .step{
+    .chose-presents .step {
         margin-left: 10%;
     }
+
     .search input {
         padding: 10px 15px;
         font-size: 15px;
