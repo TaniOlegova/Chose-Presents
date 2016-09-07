@@ -11,8 +11,8 @@
     font-style: normal;
     font-weight: 400;
     src: local('Ubuntu'), local('Ubuntu-Regular'),
-    url(http://allfont.ru/cache/fonts/ubuntu_1f2dd75c462bddda080b716fbcb96dbc.woff) format('woff'),
-    url(http://allfont.ru/cache/fonts/ubuntu_1f2dd75c462bddda080b716fbcb96dbc.ttf) format('truetype');
+    url(../fonts/ubuntu_1f2dd75c462bddda080b716fbcb96dbc.woff) format('woff'),
+    url(../fonts/ubuntu_1f2dd75c462bddda080b716fbcb96dbc.ttf) format('truetype');
 }
 @font-face {
     font-family: 'Pacifico';

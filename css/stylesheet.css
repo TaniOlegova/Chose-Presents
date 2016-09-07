@@ -191,6 +191,7 @@ a{
 }
 .button-back .btn-info:hover {
     background: rgb(27, 117, 186);
+    transition: all 1s ease;
 }
 .glyphicon {
     /*margin-left: -5px;*/
