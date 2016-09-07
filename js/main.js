@@ -44,7 +44,7 @@ $(document).ready(function () {
                     $(this).find('.remove').fadeIn(100);
                 },
                 function () {
-                    $(this).find('.remove').fadeOut(100)
+                    $(this).find('.remove').fadeOut(100);
                 });
         });
 

@@ -556,23 +556,33 @@ a{
 }
 
 .foot-images {
-    margin-top: 10px;
+    margin-top: 21px;
 }
-
-.img-face {
-    margin-right: 16px;
+.foot-images a{
+    border-radius: 40px;
 }
-
-.imgfoo {
-    cursor: pointer;
+.foot-images a:hover{
+    opacity: 0.5;
+    transition: all 0.5s ease;
 }
-
-.footer-menu a {
-    margin-left: 12px;
+.foot-images .fa {
+    color: #ffffff;
+}
+.foot-images .face {
+    background: #3b5998;
+    padding: 12px 17px;
+    margin-right: 20px;
+}
+.foot-images .twitt {
+    background: #1da1f2;
+    padding: 12px;
 }
 
 .footer-menu {
-    margin-top: 45px;
+    margin-top: 55px;
+}
+.footer-menu a {
+    margin-left: 12px;
 }
 
 footer .description-last {
@@ -585,12 +595,8 @@ footer .description-last {
 
 /******************************************************************************/
 .visibility {
-    /*background: url("../img/Shape-t.png") no-repeat;*/
     opacity: 0.9;
     background-color: white;
-    /*position: absolute;*/
-    /*width: 300px;*/
-    /*height: 300px;*/
 }
 
 .selected {
@@ -642,7 +648,6 @@ footer .description-last {
     width: 99%;
     height: 90%;
 }
-
 .btn2 {
     background: #ffffff;
     border-radius: 3px;
@@ -652,6 +657,14 @@ footer .description-last {
 .view-item {
     float: left;
     padding: 9px 12px;
+    background: #ffffff;
+}
+.view-item:hover{
+    background: rgb(217, 54, 85);
+    /*background:#ECA7B4;*/
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: all 0.7s ease;
 }
 
 .view-item i {
