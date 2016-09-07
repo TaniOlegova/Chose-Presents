@@ -23,12 +23,10 @@ body {
 }
 
 /*хедер*/
-header {
+
+.header{
     height: 137px;
-    background: url("../img/Background-header.png");
-}
-header{
-    _background: url("../img/Background-header.png");
+    background: url("../img/main-bg.jpg") repeat;
 }
 header .wrapper {
     height: 100%;
@@ -47,7 +45,8 @@ header .wrapper {
 }
 
 .transparency {
-    background: url("../img/Present-Background3.jpg");
+    background: url("../img/Present-Background.jpg") no-repeat 50% 85%;
+    background-size: cover;
 }
 
 .header-menu {
@@ -158,8 +157,11 @@ a{
 
 .my-presents {
     float: right;
-    background: url("../img/logo-f.png") no-repeat 50% 88%,
-    url("../img/Background-wishlist.png") repeat-y;
+    background:url("../img/Background-wishlist.png") repeat-y;
+
+    /*background: url("../img/logo-f.png") no-repeat 50% 88%,*/
+    /*url("../img/Background-wishlist.png") repeat-y;*/
+
     border-radius: 5px;
     text-align: center;
     margin-top: 41px;
@@ -187,7 +189,9 @@ a{
     margin-left: 4px;
     line-height: 1;
 }
-
+.button-back .btn-info:hover {
+    background: rgb(27, 117, 186);
+}
 .glyphicon {
     /*margin-left: -5px;*/
     font-size: 14px;
@@ -322,7 +326,21 @@ a{
     padding: 5px 8px;
     cursor: pointer;
 }
-
+.share:hover,
+.pencil:hover,
+.save-share span:hover{
+    background: #F5F5F5;
+    transition: all 1s ease;
+    color: rgb(27, 117, 186);
+    border: 1px ridge rgba(0, 0, 0, 0.7);
+}
+.butt:hover {
+    background: #425994;
+    transition: all 0.5s ease;
+}
+.button-two:hover {
+    border-left: 1px solid rgba(255, 255, 255, .2);
+}
 .share {
     left: 5px;
 }
@@ -413,12 +431,6 @@ a{
     /*margin: 10px 16px 0 0;*/
 
 }
-@-moz-document url-prefix() {
-    .user-descrip {
-        width: 62%;
-        margin: 10px 16px 0 0;
-    }
-}
 
 .user-profile {
     padding: 24px 0px 8px 3px;
@@ -453,10 +465,11 @@ a{
 .content-wishlist {
     margin: 5px 0;
     border-top: 1px solid rgba(217, 54, 85, 0.3);
-    /*background: url("../img/Vector-Smart-Object.png") no-repeat 50% 100%;*/
     border-bottom: 1px solid rgba(217, 54, 85, 0.3);
     height: 627px;
     padding-right: 10px;
+
+
 }
 .present-list {
     height: 550px;
@@ -532,7 +545,7 @@ a{
 }
 
 /*футер*/
-footer {
+.footer {
     background: url("../img/main-bg.jpg") repeat;
     text-align: center;
 }
@@ -660,7 +673,6 @@ footer .description-last {
 
 .material-icons {
     vertical-align: bottom;
-    /*margin: 0 5px;*/
     margin-right: 5px;
 }
 
@@ -675,10 +687,6 @@ footer .description-last {
     list-style-type: none;
     padding: 8px 4px;
     text-align: left;
-}
-
-.material-icons {
-    /*background: rgb(217, 54, 85);*/
 }
 
 .more-options:hover ul {
@@ -697,12 +705,6 @@ footer .description-last {
 
 @media screen and (max-width: 980px) {
 
-    @-moz-document url-prefix() {
-        .user-descrip {
-            width: 63%;
-            margin: 10px 9px 0 0;
-        }
-    }
     .chose-presents,
     .my-presents {
         float: none;
